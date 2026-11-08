@@ -14,7 +14,8 @@ targets = {
 known = {
     "Sparky": "Admin09",
     "Mark123": "Mark123",
-    "superman": "qwerty"
+    "superman": "qwerty",
+    "JillC": "Q2w13sA"
 }
 
 for length in range(5, 8):
