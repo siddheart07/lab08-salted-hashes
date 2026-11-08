@@ -39,9 +39,9 @@ salt = www.exploringsecurity.com
 | superman | qwerty | Verified |
 | security | 121298 | Verified |
 | Tomtom | 54321 | Verified |
-| JillC | Not recovered | Unresolved |
+| JillC | Q2w13sA | Verified |
 
-**Recovered:** 5 out of 6 accounts.
+**Recovered:** 6 out of 6 accounts.
 
 Each recovered password was verified by recomputing `SHA1(salt + password)` and comparing the digest with the original database hash.
 
@@ -55,7 +55,7 @@ Each recovered password was verified by recomputing `SHA1(salt + password)` and 
 6. Try username mutations and word+number combinations.
 7. Use John the Ripper rule and mask attacks for remaining accounts.
 8. Recover Sparky with the seven-character mask `?u?l?l?l?l?d?d`.
-9. Run a broader incremental search against JillC and document the unresolved result.
+9. Recover JillC with a targeted seven-character mask and verify the result.
 10. Independently verify all recovered passwords.
 
 ## Files
@@ -69,7 +69,8 @@ Each recovered password was verified by recomputing `SHA1(salt + password)` and 
 - `final_results.py` – final independent verification and summary.
 - `hashes.txt` – original username/hash pairs from the lab dataset.
 - `remaining_john.txt` – John the Ripper input for Sparky and JillC.
-- `jillc_only.txt` – John the Ripper input for the final unresolved JillC hash.
+- `jillc_only.txt` – John the Ripper input used for the JillC mask attack.
+- `jillc_verification.py` – independently verifies JillC's recovered password.
 
 ## Security observations
 
