@@ -60,16 +60,16 @@ Each recovered password was verified by recomputing `SHA1(salt + password)` and 
 
 ## Files
 
-- `02_hash_type_check.py` – checks hash length and hexadecimal structure.
-- `03_salt_test.py` – tests the suspected salt and recovers older numeric passwords.
-- `04_numeric_results.py` – verifies the two recovered numeric passwords.
-- `05_alphanumeric_dictionary.py` – dictionary attack against the newer alphanumeric accounts.
-- `06_username_mutation_attack.py` – targeted username-derived mutations.
-- `08_word_number_attack.py` – word-plus-number candidate generation.
-- `18_final_results.py` – final independent verification and summary.
+- `hash_type_check.py` – checks hash length and hexadecimal structure.
+- `salt_test.py` – tests the suspected salt and recovers older numeric passwords.
+- `numeric_results.py` – verifies the two recovered numeric passwords.
+- `alphanumeric_dictionary.py` – dictionary attack against the newer alphanumeric accounts.
+- `username_mutation_attack.py` – targeted username-derived mutations.
+- `word_number_attack.py` – word-plus-number candidate generation.
+- `final_results.py` – final independent verification and summary.
 - `hashes.txt` – original username/hash pairs from the lab dataset.
-- `07_remaining_john.txt` – John the Ripper input for Sparky and JillC.
-- `15_jillc_only.txt` – John the Ripper input for the final unresolved JillC hash.
+- `remaining_john.txt` – John the Ripper input for Sparky and JillC.
+- `jillc_only.txt` – John the Ripper input for the final unresolved JillC hash.
 
 ## Security observations
 
